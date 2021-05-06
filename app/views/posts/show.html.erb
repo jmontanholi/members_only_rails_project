@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<% if user_signed_in? %>
+  <strong>Author:</strong>
+  <%= @post.user.name %>
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
