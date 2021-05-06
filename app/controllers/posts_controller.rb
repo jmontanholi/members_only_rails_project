@@ -6,17 +6,13 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-
   def show; end
-
 
   def new
     @post = current_user.posts.build
   end
 
-
   def edit; end
-
 
   def create
     @post = current_user.posts.new(post_params)
@@ -32,7 +28,6 @@ class PostsController < ApplicationController
     end
   end
 
-
   def update
     respond_to do |format|
       if @post.update(post_params)
@@ -45,7 +40,6 @@ class PostsController < ApplicationController
     end
   end
 
-
   def destroy
     @post.destroy
     respond_to do |format|
@@ -56,11 +50,9 @@ class PostsController < ApplicationController
 
   private
 
-
   def set_post
     @post = Post.find(params[:id])
   end
-
 
   def post_params
     params.require(:post).permit(:title, :body)
