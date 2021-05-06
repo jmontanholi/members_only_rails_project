@@ -11,8 +11,11 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
+    <p class= "bg-info">
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"text-danger fs-1" %>
+    </p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    
   </body>
 </html>
