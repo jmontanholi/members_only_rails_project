@@ -11,20 +11,7 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <p>
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"text-danger" %>
-      </p>
-    <% else %>
-      <p>
-        <%= link_to "Sign In", new_user_session_path, class:"text-primary" %>
-      </p>
-      <p>
-        <%= link_to "Sign Up", new_user_registration_path, class:"text-primary" %>
-      </p>
-    <% end %>
-    <p class="alert"><%= alert %></p>
+    <%= check_user %>  
     <%= yield %>
-    
   </body>
 </html>
