@@ -1,3 +1,6 @@
+$purple: #5f27cd;
+$deep_purple: #341f97;
+
 body {
   background-color: #fff;
   color: #333;
@@ -20,17 +23,18 @@ pre {
   font-size: 11px;
 }
 
-a {
-  color: #000;
-}
-
-a:visited {
-  color: #666;
-}
-
-a:hover {
+.link {
   color: #fff;
-  background-color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: $deep_purple;
 }
 
 th {

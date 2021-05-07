@@ -8,10 +8,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/fd0eaf46fd.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <%= check_user %>  
+    <nav class="d-flex justify-content-between bg-purple text-light">
+      <div class="d-flex">
+        <i class="fas fa-lock-open text-light fa-2x m-2"></i>
+        <i class="fas fa-lock text-light fa-2x m-2"></i>
+        <h2 class="m-2">The Secret Social Media</h2>
+      </div>
+      <div class="m-2 mt-3">
+        <%= check_user %>  
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
