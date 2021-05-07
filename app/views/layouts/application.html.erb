@@ -14,16 +14,16 @@
   <body>
     <nav class="d-flex justify-content-between bg-purple text-light">
       <div class="d-flex">
-        <i class="fas fa-lock-open text-light fa-2x m-2"></i>
-        <i class="fas fa-lock text-light fa-2x m-2"></i>
-        <h2 class="m-2">The Secret Social Media</h2>
+        <i class="fas fa-lock-open text-light fa-2x m-3"></i>
+        <i class="fas fa-lock text-light fa-2x m-3"></i>
+        <%= link_to 'The Secret Social Media', root_path, class:"link p-2 m-1 fs-4" %>
       </div>
       <div class="m-2 mt-3">
         <%= check_user %>  
       </div>
     </nav>
     <%= yield %>
-    <footer class="d-flex flex-direction-column position-absolute bottom-0 bg-purple text-light">
+    <footer class="d-flex flex-direction-column bg-purple text-light">
       <div>
         <p>João Montanholi</p>
         <a href="">Linkedin</a>

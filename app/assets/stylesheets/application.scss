@@ -21,3 +21,16 @@ $deep_purple: #341f97;
 .bg-purple {
   background-color: #5f27cd;
 }
+
+.post-bg {
+  background-color: $purple;
+  border-radius: 15px;
+}
+
+.post-margin {
+  margin: 40px 76px 40px 76px;
+}
+
+.purple-text {
+  color: $purple;
+}

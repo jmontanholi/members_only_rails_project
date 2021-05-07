@@ -17,15 +17,6 @@ td {
   line-height: 18px;
 }
 
-body {
-  min-height: 100%;
-}
-
-footer {
-  width: 100%;
-  margin-top: 310px;
-}
-
 pre {
   background-color: #eee;
   padding: 10px;
@@ -98,5 +89,5 @@ label {
 }
 
 .page-container {
-  width: 60%;
+  min-height: calc(100vh - 58px - 60px);
 }
