@@ -1,12 +1,16 @@
-<p id="notice"><%= notice %></p>
+<p class="d-flex justify-content-center text-light fs-6 bg-deep-purple" id="notice"><%= notice %></p>
 
 <div class="row mx-auto d-flex flex-column align-items-center page-container">
 
-    <h1 class="d-flex justify-content-center purple-text">Posts</h1>
+    
+    <div class="d-flex justify-content-around">
+      <h1 class="purple-text">Posts</h1>
+      <%= link_to 'New Post', new_post_path, class:"link bg-purple p-3 rounded" %>
+    </div>
 
     <div class="row overflow-hidden">
       <% @posts.each do |post| %>
-        <div class="col-3 post-margin p-5 post-bg">
+        <div class="col-lg-3 col-md-5 post-margin p-5 post-bg">
           <div class="d-flex flex-column text-light">
             <% if user_signed_in? %>
               <div class="d-flex justify-content-center">
@@ -23,14 +27,11 @@
             </div>
           </div>
           <div class="d-flex justify-content-evenly">
-            <%= link_to 'Show', post, class:"link p-2" %>
-            <%= link_to 'Edit', edit_post_path(post), class:"link p-2" %>
-            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class:"link p-2" %>
+            <%= link_to 'Show', post, class:"link p-2 px-4" %>
+            <%= link_to 'Edit', edit_post_path(post), class:"link p-2 px-4" %>
+            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class:"link p-2 px-4" %>
           </div>
         </div>
       <% end %>
-    </div>
-    <div class="d-flex justify-content-center">
-      <%= link_to 'New Post', new_post_path, class:"link bg-purple p-3 rounded" %>
     </div>
 </div>

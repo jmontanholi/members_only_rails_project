@@ -22,13 +22,17 @@ $deep_purple: #341f97;
   background-color: #5f27cd;
 }
 
+.bg-deep-purple {
+  background-color: $deep_purple;
+}
+
 .post-bg {
   background-color: $purple;
   border-radius: 15px;
 }
 
 .post-margin {
-  margin: 40px 76px 40px 76px;
+  margin: 4%;
 }
 
 .purple-text {
