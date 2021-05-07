@@ -17,6 +17,15 @@ td {
   line-height: 18px;
 }
 
+body {
+  min-height: 100%;
+}
+
+footer {
+  width: 100%;
+  margin-top: 310px;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
@@ -27,6 +36,7 @@ pre {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -85,4 +95,8 @@ div.actions {
 
 label {
   display: block;
+}
+
+.page-container {
+  width: 60%;
 }

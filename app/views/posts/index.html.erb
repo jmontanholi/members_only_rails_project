@@ -1,35 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<div class="mx-auto d-flex flex-column align-items-center page-container bg-purple">
 
-<table>
-  <thead>
-    <tr>
-    <% if user_signed_in? %>
-      <th>Author</th>
-    <% end %>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <h1>Posts</h1>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <% if user_signed_in? %>
-          <td><%= post.user.name %></td>
-        <% end %>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post, class:"link" %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), class:"link" %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class:"link" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path, class:"link" %>
+    <div class="d-flex flex-column py-3">
+      <% @posts.each do |post| %>
+        <div class="d-flex flex-column py-5">
+          <div class="d-flex flex-column">
+            <% if user_signed_in? %>
+              <p><%= post.user.name %></p>
+            <% end %>
+            <p><%= post.title %></p>
+            <p><%= post.body %></p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <%= link_to 'Show', post, class:"link" %>
+            <%= link_to 'Edit', edit_post_path(post), class:"link" %>
+            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class:"link" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= link_to 'New Post', new_post_path, class:"link" %>
+</div>
