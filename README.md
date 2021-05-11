@@ -1,65 +1,72 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Members Only
 
-> One paragraph statement about the project.
+> A secret social media
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
+In this project we developed an application using Devise and Scaffold to let users sign up, log in, create posts, and list posts, but, those posts' authors are only available to those logged in.
 
 
-## Getting Started
+## Built With 
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Git 
+- Github
+- Git Flow
+- Windows
+- Linux
+- VSCode
+- Bootstrap
+- Ruby 2.7.2 (or later versions) 
+- Rails 6.1.3 (or later versions) 
+- Devise
+- Simple Forms
 
+## Getting Started 
 
-To get a local copy up and running follow these simple example steps.
+### Prerequisites 
 
-### Prerequisites
+- A github account 
+- Ruby and Ruby on Rails installed on your computer 
+- A terminal with your github account logged in 
 
-### Setup
+### Setup 
 
-### Install
+- Use your github account and your terminal to clone this repository to your computer: 
 
-### Usage
+  - `git clone https://github.com/jmontanholi/members_only_rails_project.git` 
 
-### Run tests
+- Go to the cloned directory: `cd members_only_rails_project` 
 
-### Deployment
+- Run `bundle install`
 
+- Run `rails db:migrate`
+
+- Run `rails s` to run the webserver.
+
+- Open the web application in the browser with the link: `localhost:3000` as default
+
+For further knowledge on these topics, check [Devise](https://github.com/heartcombo/devise ) and [Scaffold](https://guides.rubyonrails.org/command_line.html)
 
 
 ## Authors
 
-👤 **Author1**
+👤 **João Vítor Montanholi Nunes** 
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [jmontanholi](https://github.com/jmontanholi) 
+- Twitter: [MontanholiNunes](https://twitter.com/MontanholiNunes) 
+- LinkedIn: [Joao vitor montanholi](https://www.linkedin.com/in/joaovitormontanholi/) 
 
-👤 **Author2**
+👤 **Arthur Borges**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@arthurborgesdev](https://github.com/arthurborgesdev)
+- Twitter: [@arthurmoises](https://twitter.com/arthurmoises)
+- LinkedIn: [Arthur Borges](https://linkedin.com/in/arthurmoises)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/jmontanholi/members_only_rails_project/issues).
 
 ## Show your support
 
@@ -67,10 +74,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Devise
+- The Odin Project website
+- Microverse
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](./LICENSE) licensed.
